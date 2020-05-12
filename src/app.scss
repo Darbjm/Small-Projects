@@ -1,0 +1,133 @@
+body {
+  background: linear-gradient(317deg, #57ffd4, #ffffff, #616cff, #ffffff, #ffd85e, #ffffff, #ff5a5a, #ffffff, #fcff76, #ffffff, #be96ff);
+  background-size: 2200% 2200%;
+  
+  -webkit-animation: AnimationName 39s ease infinite;
+  -moz-animation: AnimationName 39s ease infinite;
+  animation: AnimationName 39s ease infinite;
+  
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 2%}
+      50%{background-position:100% 99%}
+      100%{background-position:0% 2%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 2%}
+      50%{background-position:100% 99%}
+      100%{background-position:0% 2%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 2%}
+      50%{background-position:100% 99%}
+      100%{background-position:0% 2%}
+  }
+}
+
+
+main{
+background: linear-gradient(317deg, #57ffd4, #ffffff, #616cff, #ffffff, #ffd85e, #ffffff, #ff5a5a, #ffffff, #fcff76, #ffffff, #be96ff);
+background-size: 2200% 2200%;
+
+-webkit-animation: AnimationName 39s ease infinite;
+-moz-animation: AnimationName 39s ease infinite;
+animation: AnimationName 39s ease infinite;
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
+}
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+section{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  align-items: center;
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 800px;
+    h1{
+      width: 800px;
+      text-align: center;
+    }
+    img{
+      max-height: 30px;
+      max-width: 70px;
+    }
+    button {
+      width: 250px;
+    }
+  }
+}
+}
+
+.d3 {
+  background-color: white;
+  margin: 30px;
+  .bar{
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(317deg, #57ffd4, #ffffff, #616cff, #ffffff, #ffd85e, #ffffff, #ff5a5a, #ffffff, #fcff76, #ffffff, #be96ff);
+    background-size: 2200% 2200%;
+
+    -webkit-animation: AnimationName 39s ease infinite;
+    -moz-animation: AnimationName 39s ease infinite;
+    animation: AnimationName 39s ease infinite;
+
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 2%}
+        50%{background-position:100% 99%}
+        100%{background-position:0% 2%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 2%}
+        50%{background-position:100% 99%}
+        100%{background-position:0% 2%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 2%}
+        50%{background-position:100% 99%}
+        100%{background-position:0% 2%}
+    }
+  }
+}
+
+.next{
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 100%;
+  align-items: flex-end;
+  padding-bottom: 40px;
+  padding-right: 40px;
+}
+
+.prev{
+  width: 100%;
+  display: flex;
+  margin: 40px 0 0 40px;
+  height: 100%;
+  align-items: flex-end;
+  padding-top: 40px;
+}
