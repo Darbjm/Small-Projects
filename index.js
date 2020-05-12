@@ -1,5 +1,3 @@
-require('dotenv').config()
-require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH_TOKEN)
 const bodyParser = require('body-parser')
 const express = require('express')
 const app = express()

@@ -1,4 +1,6 @@
-const twilio = require('twilio')(process.env.TWILIO_SID, process.env.TWILIO_AUTH_TOKEN)
+const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') })
+const twilio = require('twilio')(process.env.REACT_APP_TWILIO_SID, process.env.REACT_APP_TWILIO_AUTH_TOKEN)
 
 function message(req, res) {
   const eng = req.body.config.params.text
@@ -7,8 +9,8 @@ function message(req, res) {
   const sentance = `${eng + ' is ' + trans + ' in ' + lang}`
   try {
     twilio.messages.create({
-      from: process.env.TWILIO_NUMBER,
-      to: process.env.MY_NUMBER,
+      from: process.env.REACT_APP_TWILIO_NUMBER,
+      to: process.env.REACT_APP_MY_NUMBER,
       body: sentance
     })
   } catch (err) {

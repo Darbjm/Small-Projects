@@ -19,8 +19,7 @@ class Yandex extends Component {
   }
 
   async componentDidMount() {
-    console.log(process.env, 'process')
-    const Yandex = 'trnsl.1.1.20200204T133731Z.dd355e5b980cf4c4.3a6f15b7ff2081ef3966b641dbff356a54003e80'
+    const Yandex = process.env.REACT_APP_YANDEX_KEY
     try {
       const langs = await axios.get(`https://translate.yandex.net/api/v1.5/tr.json/getLangs?key=${Yandex}&ui=en`)
       this.setState({ data: { Languages: langs.data.langs } })
@@ -46,7 +45,7 @@ class Yandex extends Component {
   }
 
   translate = async (lang, text) => {
-    const Yandex = 'trnsl.1.1.20200204T133731Z.dd355e5b980cf4c4.3a6f15b7ff2081ef3966b641dbff356a54003e80'
+    const Yandex = process.env.REACT_APP_YANDEX_KEY
     await axios.post('https://translate.yandex.net/api/v1.5/tr.json/translate', null, {
       params: { key: Yandex, lang, text }
     })

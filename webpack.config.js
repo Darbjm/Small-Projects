@@ -1,4 +1,5 @@
 const path = require('path')
+require('dotenv').config({ path: path.resolve(__dirname, '.env') })
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
@@ -52,11 +53,11 @@ module.exports = {
     ]),
     new webpack.DefinePlugin({
       'process.env': {
-        'TWILIO_SID': JSON.stringify(process.env.TWILIO_SID),
-        'TWILIO_AUTH_TOKEN': JSON.stringify(process.env.TWILIO_AUTH_TOKEN),
-        'TWILIO_NUMBER': JSON.stringify(process.env.TWILIO_NUMBER),
-        'YANDEX_KEY': JSON.stringify(process.env.YANDEX_KEY),
-        'MY_NUMBER': JSON.stringify(process.env.MY_NUMBER)
+        'REACT_APP_TWILIO_SID': JSON.stringify(process.env.REACT_APP_TWILIO_SID),
+        'REACT_APP_TWILIO_AUTH_TOKEN': JSON.stringify(process.env.REACT_APP_TWILIO_AUTH_TOKEN),
+        'REACT_APP_TWILIO_NUMBER': JSON.stringify(process.env.REACT_APP_TWILIO_NUMBER),
+        'REACT_APP_YANDEX_KEY': JSON.stringify(process.env.REACT_APP_YANDEX_KEY),
+        'REACT_APP_MY_NUMBER': JSON.stringify(process.env.REACT_APP_MY_NUMBER)
       }
     })
   ]
