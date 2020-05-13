@@ -20,6 +20,7 @@ class Yandex extends Component {
 
   async componentDidMount() {
     const Yandex = process.env.REACT_APP_YANDEX_KEY
+    console.log(process.env)
     try {
       const langs = await axios.get(`https://translate.yandex.net/api/v1.5/tr.json/getLangs?key=${Yandex}&ui=en`)
       this.setState({ data: { Languages: langs.data.langs } })
