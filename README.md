@@ -1,8 +1,8 @@
-# <img src='src/assets/d3-react.svg' width='400'>
+# <img src='src/assets/Yandex-Twilio-D3-React.svg' width='400'>
 
-<h1>D3 Project One: Bar Chart</h1>
+<h1>Personal Project Two: Mini Projects</h1>
 
-<h2>Goal: Create a responsive barchart that updates</h2>
+<h2>Goal: Learn about and use libraries and technologies by creating small projects</h2>
 
 | Contents                      |                |
 | ------------------------------|----------------|
@@ -15,226 +15,192 @@
 <h2 name='overview'>Overview</h2>
 
 <h3>Introduction</h3>
+In my first small project I built an app that allows the user to send a message directly to my phone in over 90 languages using Twilio and Yandex.
 
-Using Adam Janes Introduction to D3.js with React I have built a bar chart that updates.
+In my second project I used Adam Janes Introduction to D3.js with React to build an interactive and updating scatterplot and barchart, I have also experimented with ways to display images in D3.
 
 <h3>Deployment</h3>
 
-The app is deployed on Heroku and can be found here: https://chowvow-ga.herokuapp.com <br>
-The login details are  email: ben@email.com password: pass <br>
-(The login details are weak to allow easy access, I have addressed this [here](#bugs))
-
-<h3>Team</h3>
-
-• <a href='https://github.com/EmilySummers'>Emily Summers</a> <br>
-• <a href='https://github.com/justteaco'>Tahirah A'sha</a> <br>
-• <a href='https://github.com/Tbanks9'>Tim Banks</a> <br>
-
-<h3>My contributions</h3>
-
-• All 62 tests with Mocha & Chai<br>
-• Interactive, searchable Mapbox with pop-ups of users at their location that link to their profile<br>
-• The offers page and the ability for users to send, accept and delete offers and delete accepted offers<br>
-• Setting up the secure route for both front and back-ends<br>
+The app is deployed on Heroku and can be found here: https://small-project-libraries.herokuapp.com/ <br>
 
 <h3>Timeframe</h3>
 
-7 days
+4 days
 
 <h2 name='brief'>Brief</h2>
 
-* **Build a full-stack application** by making your own backend and your own front-end
-* **Use an Express API** to serve your data from a Mongo database
-* **Consume your API with a separate front-end** built with React
-* **Have automated tests** for _at least_ one RESTful resource on the back-end.
-* **Implement thoughtful user stories/wireframes**
-* **Have a visually impressive design**
-* **Be deployed online**
+* **Receive a text sent via Twilio**
+* **Translate the text into another language**
+* **Build a D3 graph in a react environment**
+* **Have the graph update**
 
 <h2 name='tech'>Technologies used</h2>
 <p>1. HTML5 <br>
-2. SCSS & Bulma <br>
+2. SCSS & Bulma & Bootstrap <br>
 3. JavaScript (ES6) <br>
 4. JSON <br>
 5. React.js <br>
 6. Node.js <br>
 7. Express.js <br>
 8. Axios <br>
-9. Mongoose & MongoDB <br>
-10. Mocha & Chai <br>
-11. Insomnia <br>
-12. Robo 3T <br>
-13. Dotenv <br>
-14. Cloudinary <br>
-15. Mapbox <br>
-16. Z shell <br>
-17. JWT <br>
-18. bcrypt <br>
-19. Yarn <br>
-20. Heroku <br>
-21. GitHub <br><p/>
+9. Insomnia <br>
+10. Dotenv <br>
+11. D3 <br>
+12. Twilio <br>
+13. Yandex <br>
+14. Z shell <br>
+15. Yarn <br>
+16. Heroku <br>
+17. GitHub <br><p/>
 
 <h2 name='app'>App</h2>
 
-The user can begin by taking a look around the app when not logged in. They can view the map or the list of users that know a skill. As soon as they try to view anothers profile they a redirected to log in. The user can register and upload a profile image via Cloudinary or log in with their existing information.<br>
+In the case of the Twilio and Yandex app the user can type in anything, then translate that into any language from the list below. Once the user is happy with their translation they can send it to me as a text message.<br>
 <br>
 <br>
-<img src='src/readme/Register.png' width='600'>
-<br>
-<br>
-<br>
-They are able to search for any area using the Mapbox Geocoder the interactive map then displays the area and other users within it. The markers display the users profile image and then once clicked a pop-up showing their skills, rating and name appears, this is a link to the users profile where you can see their information and ask to collaborate.<br>
-<br>
-<br>
-<img src='src/readme/Map1.gif' width='600'>
+<img src='src/assets/Twilio.gif' width='600'>
 <br>
 <br>
 <br>
-The user has an offers page where they can view offers to collaborate and accept or delete them, they can view their accepted offers and see the accepted users email in order for them to persue their desire to collaborate or they can delete this accepted user.<br>
-<br>
-<br>
-<img src='src/readme/Offers.gif' width='600'>
+<img src='src/assets/Text.png' width='300'>
 <br>
 <br>
 <br>
-You may want to search via specific skills, in this case the user can either search the images on the home page or the drop down list when the 'CHEFS' button is selected on the navbar.<br>
+With D3 in React the Scatterplot works with the table to its right, dynamically displaying its data and changing axis, when you add or remove data.<br>
 <br>
 <br>
-<img src='src/readme/Pictures.gif' width='600'>
+<img src='src/assets/Scatter.gif' width='600'>
 <br>
 <br>
 <br>
-In the gif below the user navigates via the 'CHEFS' button to a user they have accepted. This means we can see the users email under the image. As the user has already collaborated with them they leave a review and score. The users average rating is calculated in the back-end and updated immediately.<br>
+The Bar chart dynamically updates via the drop down selection.<br>
 <br>
 <br>
-<img src='src/readme/Review.gif' width='600'>
+<img src='src/assets/BarChart.gif' width='600'>
+<br>
+<br>
+<br>
+Below the Bar chart is a quick experiment to display images via D3.<br>
+<br>
+<br>
+<img src='src/assets/Images.gif' width='600'>
 <br>
 <br>
 <br>
 <h2 name='approach'>Approach</h2>
-We listed a few different project ideas to start with and then voted for our favourite, the most popular was the sharing skills app, which we then further refined into cooking skills. Using the MoSCoW method we outlined our most important features and proceeded to sketch wireframes and user journeys. We distributed sketches of each feature to the person assigned to build it and used Trello to track our progress.<br>
+Starting with D3 in React I knew I had to do some research for this as D3 in React is very complicated due to the fact they both try to render the DOM causing bugs. I therefore took the Introduction to D3.js with React Udemy course by Adam Janes.<br>
 <br>
 <br>
-<img src='src/readme/Trello.png'>
+<img src='src/assets/Udemy.png'>
 <br>
 <br>
 <br>
+In the case of Twilio and Yandex I looked up the documentation for each and acquired the necessary codes by signing up. Twilio works with Express so I therefore needed to setup a back end for this part. 
 <h2 name='future'>Future content</h2>
-<h3>Messaging</h3>
-One of our features we almost finished was a direct messaging feature that would allow the users to communicate via the app once they had accepted each others offer. This mean't we could do away with the slight clunky emailing option. <br>
-<br>
-<br>
-<img src='src/readme/UserMessages.png' width='600'>
-<br>
-<br>
-<h3>Recipes</h3>
-Another feature we had started work on was recipes. We decided to create a model for this and have a one-to-many relationship with the user who creates it. The recipes could then be searchable in a similar way to using the 'CHEFS' button and users could review and rate the recipe.<br>
-<br>
-<br>
-<img src='src/readme/Recipes.png' width='600'>
-<br>
-<br>
-<h3>Reviews</h3>
-Aspects of the reviewing feature that were missing was the ability to update and delete reviews, you are only able to review if you have accepted each others offers and you are only able to review once.
-<br>
-<br>
-<br>
-<h3>Offers</h3>
-I would have liked to have the users' cards in the offers section link to the users profile.
+<h3>Images</h3>
+I would like to make the image display with D3 more interactive<br>
 <br>
 <br>
 <h2 name='wins'>Wins</h2>
-<h3>Testing</h3>
-Before this project testing was an intimidating concept, if you have seen my previous personal project Irony, you will see I started a small amount of testing. However it was a future learning of mine to do more, now after creating 62 tests with Mocha and Chai I see it as a fun and satisfying exercise similar to Codewars. However due to our problems with git merging and branching which I discuss in merging we can see that a test failed after the final merge. The test failed because a user was able to delete a different user. I have now fixed this issue with the following code in controllers/users.js:
+<h3>D3 wrapper</h3>
+Learning how to wrap D3 was really insightful as I learned you can control if your component updates via the named method, but you can still pass down props.
 
 ```javascript
-function destroy(req, res) {
-  User
-    .findById(req.params.id)
-    .then(user => {
-      if (!user.equals(req.currentUser._id)) return res.status(401).json({ message: 'Unauthorized' }) //This line was deleted when merged
-      if (!user) return res.status(404).json({ message: 'Not Found ' })
-      user.remove().then(() => res.sendStatus(204))
+export default class ChartWrapper extends Component {
+  componentDidMount() {
+    this.setState({
+      barchart: new D3Chart2(this.refs.chart2),
+      chart: new D3Chart(this.refs.chart1, this.props.data, this.props.updateName)
     })
-    .catch(err => res.json(err))
+  }
+
+  shouldComponentUpdate() {
+    return false
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.state.chart.update(nextProps.data)
+    this.state.barchart.update(nextProps.gender)
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="chart-area" ref="chart1"></div>
+        <hr />
+        <h4>Updating a chart via user input</h4>
+        <div ref='chart2'></div>
+      </div>
+    )
+  }
 }
 ```
 <br>
 <br>
 <br>
-<img src='src/readme/Testing.png' width='600'>
-<br>
-<br>
-<h3>Teamwork</h3>
-Although we had issues with git and merging our team worked seamlessly, using trello we democratically divided the tasks and worked quickly and enjoyably together. Helping each other was useful for the team and the individuals doing the help as we all learned from each other and put parts of ourselves into the app. Producing something we were all proud of.<br>
-<br>
-<br>
-<h3>Promise.all()</h3>
-The whole Mapbox feature was a win for me as I had previously tried in another project to implement markers with pop-ups and failed. A few smaller wins were things such as the user is able to search any area on the home screen and the map would load it, and handling the viewport change, meaning the user could move the map with the mouse. However one really great win for me was learning about the Promise.all() function. Because it is synchronous it allowed me to get the latitude and longitude of each user with the geocoder api in order. Because the Promise waits for each user in the map function to be finished before it starts on the next one, it meant I could setState the user and their coordinates at the same time and not have to worry about the wrong coordinates being attatched to the wrong user.<br>
-<br>
-<br>
-<img src='src/readme/MapboxPromise.png' width='600'>
-<br>
-<br>
-<h3>Offers pending</h3>
-The offers page was another big win. When the user sends an offer I had to attach the user sending the offer in the back-end with the following code:
+<h3>General Update Pattern</h3>
+D3 has a general update pattern that is unintuitive and confusing, I still have a lot to learn with D3 but understanding the basics like you need to select the rectangles before they are created is a big win.
 
 ```javascript
-function offersPendingCreate(req, res) {
-  User
-    .findById(req.params.id)
-    .then(user => {
-      if (!user) return res.status(404).json({ message: 'Not Found' })
-      if (user.equals(req.currentUser._id)) return res.status(401).json({ message: 'Unauthorized' })
-      user.offersPending.push({ offeringUser: req.currentUser }) // attaches offering user
-      return user.save()
-    })
-    .then(user => res.status(201).json(user))
-    .catch(err => res.json(err))
-}
-```
+    //DATA JOIN
+    const rects = vis.svg.selectAll('rect')
+      .data(vis.data)
 
-I had to do this because the object has its own ID and therefore could not see how I could use the populate function. I again turned to the Promise.all() function to allow each GET request to return and therefore setState with all the offers in one array.<br>
+    //EXIT
+    rects.exit()
+      .transition().duration(500)
+      .attr('height', 0)
+      .attr('y', HEIGHT)
+      .remove()
+
+    //UPDATE
+    rects.transition().duration(500)
+      .attr('x', d => x(d.name))
+      .attr('y', d => y(d.height))
+      .attr('width', x.bandwidth)
+      .attr('height', d => HEIGHT - y(d.height))
+
+    //ENTER
+    rects.enter().append('rect')
+      .attr('x', d => x(d.name))
+      .attr('width', x.bandwidth)
+      .attr('fill', 'grey')
+      .attr('y', HEIGHT)
+      .transition().duration(500)
+      .attr('y', d => y(d.height))
+      .attr('height', d => HEIGHT - y(d.height))
+```
 <br>
 <br>
-<img src='src/readme/FindOffersPromise.png' width='600'><br>
 <br>
-<br>
-<h3>User email</h3>
-I wanted the collaborate button on another users page to change according to if the user had not sent a request, had sent a request and finally if that request had been sent. In the begining this proved tricky but I actually found that like many things I had learned in code, it was deceptively simple and used a ternary statement inside a ternary statement and then just had to find if the current user was inside the offersPending or offersAccepted array:<br>
-<br>
-<br>
-<img src='src/readme/UserShow.png' width='600'>
-<img src='src/readme/UserShowOfferPending.png' width='600'>
+<h3>DotEnv</h3>
+Getting to grips with environment variables was a bit tricky to begin with but being forced to use them in both the front and back end has given me a good understanding of their setup in a local environment and on pages such as Heroku.<br>
 <br>
 <br>
 <h2 name='blockers'>Blockers</h2>
-<h3>Merging</h3>
-Using the merge and branch method with git was an interesting new way of working in a group. I can see the benefits and will be happy to work with it in the future. However this particular project it caused a lot of issues and wasted time trying to fix things that were being broken after each merge. I assume one or all of us were using it incorrectly but the random lines of code being deleted all through the app was a big problem in this project.
+<h3>D3 Images</h3>
+Placing Images in a chart proved to be a steep learning curve. I managed to cobble together a simple animation to display the images, however getting to this point was difficult and I still do not fully understand how it all works<br>
 <br>
 <br>
-<h3>Offers</h3>
-Although the offers feature was a win for me getting there was difficult. It took me half a day to understand how I could delete an offer. I was struggling to delete the offer because I could not find a unique ID in the offer by which to identify and remove it. I eventually discovered I could attach it to the request but because the acceptedUser and offereyid were different objects in memory I could only use the equality operator rather than the strict equality operator.
-<br>
-<br>
-<img src='src/readme/Backend issue.png' width='600'>
+<h3>D3 wrapper</h3>
+Although the D3 wrapper works some of the code I was told to use, is no longer considered safe, and I'm unsure how to update these parts. Also the component will receive props method could not be used with other graphs I attempted to create, as I don't understand it properly.<br>
 <br>
 <br>
 <h2 name='bugs'>Bugs</h2>
-<h3>Passwords</h3>
-Unfortunately we did not include a way to make sure that the user had to create a secure password that was at least 8 characters long and contained uppercase and lowercase letters and numbers.
+<h3>Scatterplot</h3>
+The user can enter only one or two bits of information to the chart and it will update causing a bug. This is easily fixed with a conditional piece of code that will only send through the information when all three sections have been filled.<br>
 <br>
 <br>
-<h3>Edit profile</h3>
-The users image does not load for the edit page as we were focusing on finishing the app and did not donate enough time to figureing out how were could uses the profile image as an upload button that would change.
+<img src='src/assets/ScatterGlitch.gif' width='600'>
 <br>
 <br>
-<img src='src/readme/Editprofile.png' width='600'>
+<h3>Images</h3>
+During a short period after rendering, if the user clicks the center image, all the images will switch positions. Also the only image you can interact with is the center one. At my current understanding of D3 I do not understand why this is happening.<br>
 <br>
 <br>
-<h3>SCSS</h3>
-The styling also has sections that are glitchy and ugly. It is not very responsive however we proritised the time we had on functionality and features.
+<img src='src/assets/ImageGlitch.gif' width='600'>
+<br>
+<br>
 <h2 name='learn'>Future learnings</h2>
-• Learn about refs<br>
-• Include password security features<br>
-• Get a better understanding of objects in memory and equality operators<br>
+• Work with D3 more<br>
+• Look into built in methods of react<br>
