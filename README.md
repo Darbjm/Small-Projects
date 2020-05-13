@@ -15,8 +15,7 @@
 <h2 name='overview'>Overview</h2>
 
 <h3>Introduction</h3>
-In my first small project I built an app that allows the user to send a message directly to my phone in over 90 languages using Twilio and Yandex.
-
+In my first small project I built an app that allows the user to send a message directly to my phone in over 90 languages using Twilio and Yandex.<br>
 
 In my second project I used Adam Janes Introduction to D3.js with React to build an interactive and updating scatterplot and barchart, I have also experimented with ways to display images in D3.
 
