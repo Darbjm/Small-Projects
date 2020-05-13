@@ -95,7 +95,7 @@ Starting with D3 in React I knew I had to do some research for this as D3 in Rea
 <br>
 <br>
 <br>
-In the case of Twilio and Yandex I looked up the documentation for each and acquired the necessary codes by signing up. Twilio works with Express so I therefore needed to setup a back end for this part. 
+In the case of Twilio and Yandex I looked up the documentation for each and acquired the necessary codes by signing up. Twilio works with Express so I therefore needed to set up a back end for this part. 
 <h2 name='future'>Future content</h2>
 <h3>Images</h3>
 I would like to make the image display with D3 more interactive<br>
@@ -183,11 +183,11 @@ Placing Images in a chart proved to be a steep learning curve. I managed to cobb
 <br>
 <br>
 <h3>D3 wrapper</h3>
-Although the D3 wrapper works some of the code I was told to use, is no longer considered safe, and I'm unsure how to update these parts. Also the component will receive props method could not be used with other graphs I attempted to create, as I don't understand it properly.<br>
+Although the D3 wrapper works, some of the code I was told to use is no longer considered safe, and I'm unsure how to update these parts. Also the component will receive props method could not be used with other graphs I attempted to create, as I don't understand it properly.<br>
 <br>
 <br>
 <h2 name='bugs'>Bugs</h2>
-<h3>Scatterplot</h3>
+<h3>Scatter Plot</h3>
 The user can enter only one or two bits of information to the chart and it will update causing a bug. This is easily fixed with a conditional piece of code that will only send through the information when all three sections have been filled.<br>
 <br>
 <br>
@@ -204,3 +204,5 @@ During a short period after rendering, if the user clicks the center image, all 
 <h2 name='learn'>Future learnings</h2>
 • Work with D3 more<br>
 • Look into built in methods of react<br>
+
+
