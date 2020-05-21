@@ -48,7 +48,7 @@ class D3 extends Component {
         </Navbar>
         <div className='d3'>
           <div className='marg'>
-            <div className='prev'><Link className='button is-rounded' to='/'> Previous</Link></div>
+            <div className='prev'><Link className='button is-rounded' to='/'> Previous</Link><Link className='button is-rounded' to='/rotate'> Next</Link></div>
             <Container>
               <br />
               <br />

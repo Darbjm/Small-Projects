@@ -130,4 +130,38 @@ section{
   height: 100%;
   align-items: flex-end;
   padding-top: 40px;
+  justify-content: space-around;
+}
+
+main{
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .prev{
+      width: 100%;
+      margin: 0 0 0 0;
+      display: flex;
+      height: auto;
+      align-items: flex-start;
+      padding-top: 0;
+      justify-content: space-around;
+    }
+    .rotate{
+      display: flex;
+      flex-direction: column;
+      div{
+        display: flex;
+        flex-direction: row;
+        img{
+          height: 100px;
+          width: 150px;
+        }
+        .box{
+          box-shadow: none;
+        }
+      }
+    }
+
+  }
 }
