@@ -6,7 +6,8 @@
   "scripts": {
     "start:back": "nodemon",
     "start:front": "webpack-dev-server --mode-development",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "start": "node index.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
