@@ -5,8 +5,8 @@ import A from './images/A.svg'
 import B from './images/B.svg'
 import R from './images/R.svg'
 import I from './images/I.svg'
-import E from './images/E.svg'
-import L from './images/L.svg'
+// import E from './images/E.svg'
+// import L from './images/L.svg'
 
 class Rotate extends Component {
   constructor() {
@@ -20,15 +20,11 @@ class Rotate extends Component {
       angle3: 0,
       angle4: 0,
       angle5: 0,
-      angle6: 0,
-      angle7: 0,
       angle8: 0,
       angle9: 0,
       angle10: 0,
       angle11: 0,
       angle12: 0,
-      angle13: 0,
-      angle14: 0,
       angle15: 0,
       angle16: 0,
       angle17: 0,
@@ -36,6 +32,14 @@ class Rotate extends Component {
       angle19: 0,
       angle20: 0,
       angle21: 0,
+      angle22: 0,
+      angle23: 0,
+      angle24: 0,
+      angle25: 0,
+      angle26: 0,
+      angle27: 0,
+      angle28: 0,
+      angle29: 0,
 
       startAngle: 90,
       currentAngle: 0,
@@ -44,22 +48,26 @@ class Rotate extends Component {
       boxCenterPoint3: {},
       boxCenterPoint4: {},
       boxCenterPoint5: {},
-      boxCenterPoint6: {},
-      boxCenterPoint7: {},
       boxCenterPoint8: {},
       boxCenterPoint9: {},
       boxCenterPoint10: {},
       boxCenterPoint11: {},
       boxCenterPoint12: {},
-      boxCenterPoint13: {},
-      boxCenterPoint14: {},
       boxCenterPoint15: {},
       boxCenterPoint16: {},
       boxCenterPoint17: {},
       boxCenterPoint18: {},
       boxCenterPoint19: {},
       boxCenterPoint20: {},
-      boxCenterPoint21: {}
+      boxCenterPoint21: {},
+      boxCenterPoint22: {},
+      boxCenterPoint23: {},
+      boxCenterPoint24: {},
+      boxCenterPoint25: {},
+      boxCenterPoint26: {},
+      boxCenterPoint27: {},
+      boxCenterPoint28: {},
+      boxCenterPoint29: {}
     }
     this.getPositionFromCenter = this.getPositionFromCenter.bind(this)
     this.mouseMoveHandler = this.mouseMoveHandler.bind(this)
@@ -115,26 +123,6 @@ class Rotate extends Component {
     return fromBoxCenter5
   }
 
-  getPositionFromCenter6(e) {
-    const { boxCenterPoint6 } = this.state
-  
-    const fromBoxCenter6 = {
-      x: e.clientX - boxCenterPoint6.x,
-      y: -(e.clientY - boxCenterPoint6.y)
-    }
-    return fromBoxCenter6
-  }
-
-  getPositionFromCenter7(e) {
-    const { boxCenterPoint7 } = this.state
-  
-    const fromBoxCenter7 = {
-      x: e.clientX - boxCenterPoint7.x,
-      y: -(e.clientY - boxCenterPoint7.y)
-    }
-    return fromBoxCenter7
-  }
-
   getPositionFromCenter8(e) {
     const { boxCenterPoint8 } = this.state
   
@@ -183,26 +171,6 @@ class Rotate extends Component {
       y: -(e.clientY - boxCenterPoint12.y)
     }
     return fromBoxCenter12
-  }
-
-  getPositionFromCenter13(e) {
-    const { boxCenterPoint13 } = this.state
-  
-    const fromBoxCenter13 = {
-      x: e.clientX - boxCenterPoint13.x,
-      y: -(e.clientY - boxCenterPoint13.y)
-    }
-    return fromBoxCenter13
-  }
-
-  getPositionFromCenter14(e) {
-    const { boxCenterPoint14 } = this.state
-  
-    const fromBoxCenter14 = {
-      x: e.clientX - boxCenterPoint14.x,
-      y: -(e.clientY - boxCenterPoint14.y)
-    }
-    return fromBoxCenter14
   }
 
   getPositionFromCenter15(e) {
@@ -275,6 +243,86 @@ class Rotate extends Component {
     return fromBoxCenter21
   }
 
+  getPositionFromCenter22(e) {
+    const { boxCenterPoint22 } = this.state
+  
+    const fromBoxCenter22 = {
+      x: e.clientX - boxCenterPoint22.x,
+      y: -(e.clientY - boxCenterPoint22.y)
+    }
+    return fromBoxCenter22
+  }
+
+  getPositionFromCenter23(e) {
+    const { boxCenterPoint23 } = this.state
+  
+    const fromBoxCenter23 = {
+      x: e.clientX - boxCenterPoint23.x,
+      y: -(e.clientY - boxCenterPoint23.y)
+    }
+    return fromBoxCenter23
+  }
+
+  getPositionFromCenter24(e) {
+    const { boxCenterPoint24 } = this.state
+  
+    const fromBoxCenter24 = {
+      x: e.clientX - boxCenterPoint24.x,
+      y: -(e.clientY - boxCenterPoint24.y)
+    }
+    return fromBoxCenter24
+  }
+
+  getPositionFromCenter25(e) {
+    const { boxCenterPoint25 } = this.state
+  
+    const fromBoxCenter25 = {
+      x: e.clientX - boxCenterPoint25.x,
+      y: -(e.clientY - boxCenterPoint25.y)
+    }
+    return fromBoxCenter25
+  }
+
+  getPositionFromCenter26(e) {
+    const { boxCenterPoint26 } = this.state
+  
+    const fromBoxCenter26 = {
+      x: e.clientX - boxCenterPoint26.x,
+      y: -(e.clientY - boxCenterPoint26.y)
+    }
+    return fromBoxCenter26
+  }
+
+  getPositionFromCenter27(e) {
+    const { boxCenterPoint27 } = this.state
+  
+    const fromBoxCenter27 = {
+      x: e.clientX - boxCenterPoint27.x,
+      y: -(e.clientY - boxCenterPoint27.y)
+    }
+    return fromBoxCenter27
+  }
+
+  getPositionFromCenter28(e) {
+    const { boxCenterPoint28 } = this.state
+  
+    const fromBoxCenter28 = {
+      x: e.clientX - boxCenterPoint28.x,
+      y: -(e.clientY - boxCenterPoint28.y)
+    }
+    return fromBoxCenter28
+  }
+
+  getPositionFromCenter29(e) {
+    const { boxCenterPoint29 } = this.state
+  
+    const fromBoxCenter29 = {
+      x: e.clientX - boxCenterPoint29.x,
+      y: -(e.clientY - boxCenterPoint29.y)
+    }
+    return fromBoxCenter29
+  }
+
 
 
   mouseMoveHandler(e) {
@@ -284,15 +332,11 @@ class Rotate extends Component {
     const fromBoxCenter3 = this.getPositionFromCenter3(e)
     const fromBoxCenter4 = this.getPositionFromCenter4(e)
     const fromBoxCenter5 = this.getPositionFromCenter5(e)
-    const fromBoxCenter6 = this.getPositionFromCenter6(e)
-    const fromBoxCenter7 = this.getPositionFromCenter7(e)
     const fromBoxCenter8 = this.getPositionFromCenter8(e)
     const fromBoxCenter9 = this.getPositionFromCenter9(e)
     const fromBoxCenter10 = this.getPositionFromCenter10(e)
     const fromBoxCenter11 = this.getPositionFromCenter11(e)
     const fromBoxCenter12 = this.getPositionFromCenter12(e)
-    const fromBoxCenter13 = this.getPositionFromCenter13(e)
-    const fromBoxCenter14 = this.getPositionFromCenter14(e)
     const fromBoxCenter15 = this.getPositionFromCenter15(e)
     const fromBoxCenter16 = this.getPositionFromCenter16(e)
     const fromBoxCenter17 = this.getPositionFromCenter17(e)
@@ -300,6 +344,15 @@ class Rotate extends Component {
     const fromBoxCenter19 = this.getPositionFromCenter19(e)
     const fromBoxCenter20 = this.getPositionFromCenter20(e)
     const fromBoxCenter21 = this.getPositionFromCenter21(e)
+    const fromBoxCenter22 = this.getPositionFromCenter22(e)
+    const fromBoxCenter23 = this.getPositionFromCenter23(e)
+    const fromBoxCenter24 = this.getPositionFromCenter24(e)
+    const fromBoxCenter25 = this.getPositionFromCenter25(e)
+    const fromBoxCenter26 = this.getPositionFromCenter26(e)
+    const fromBoxCenter27 = this.getPositionFromCenter27(e)
+    const fromBoxCenter28 = this.getPositionFromCenter28(e)
+    const fromBoxCenter29 = this.getPositionFromCenter29(e)
+
 
 
 
@@ -318,12 +371,6 @@ class Rotate extends Component {
     const newAngle5 = 
         90 - Math.atan2(fromBoxCenter5.y, fromBoxCenter5.x) * (180 / Math.PI)
         
-    const newAngle6 = 
-        90 - Math.atan2(fromBoxCenter6.y, fromBoxCenter6.x) * (180 / Math.PI)
-        
-    const newAngle7 = 
-        90 - Math.atan2(fromBoxCenter7.y, fromBoxCenter7.x) * (180 / Math.PI)
-        
     const newAngle8 = 
         90 - Math.atan2(fromBoxCenter8.y, fromBoxCenter8.x) * (180 / Math.PI)
         
@@ -338,12 +385,6 @@ class Rotate extends Component {
         
     const newAngle12 = 
         90 - Math.atan2(fromBoxCenter12.y, fromBoxCenter12.x) * (180 / Math.PI)
-        
-    const newAngle13 = 
-        90 - Math.atan2(fromBoxCenter13.y, fromBoxCenter13.x) * (180 / Math.PI)
-        
-    const newAngle14 = 
-        90 - Math.atan2(fromBoxCenter14.y, fromBoxCenter14.x) * (180 / Math.PI)
         
     const newAngle15 = 
         90 - Math.atan2(fromBoxCenter15.y, fromBoxCenter15.x) * (180 / Math.PI)
@@ -362,11 +403,34 @@ class Rotate extends Component {
         
     const newAngle20 = 
         90 - Math.atan2(fromBoxCenter20.y, fromBoxCenter20.x) * (180 / Math.PI)
-
+        
     const newAngle21 = 
         90 - Math.atan2(fromBoxCenter21.y, fromBoxCenter21.x) * (180 / Math.PI)
         
+    const newAngle22 = 
+        90 - Math.atan2(fromBoxCenter22.y, fromBoxCenter22.x) * (180 / Math.PI)
+        
+    const newAngle23 = 
+        90 - Math.atan2(fromBoxCenter23.y, fromBoxCenter23.x) * (180 / Math.PI)
+        
+    const newAngle24 = 
+        90 - Math.atan2(fromBoxCenter24.y, fromBoxCenter24.x) * (180 / Math.PI)
+        
+    const newAngle25 = 
+        90 - Math.atan2(fromBoxCenter25.y, fromBoxCenter25.x) * (180 / Math.PI)
+        
+    const newAngle26 = 
+        90 - Math.atan2(fromBoxCenter26.y, fromBoxCenter26.x) * (180 / Math.PI)
+        
+    const newAngle27 = 
+        90 - Math.atan2(fromBoxCenter27.y, fromBoxCenter27.x) * (180 / Math.PI)
+        
+    const newAngle28 = 
+        90 - Math.atan2(fromBoxCenter28.y, fromBoxCenter28.x) * (180 / Math.PI)
 
+    const newAngle29 = 
+        90 - Math.atan2(fromBoxCenter29.y, fromBoxCenter29.x) * (180 / Math.PI)
+        
 
 
     this.box.style.transform =
@@ -394,16 +458,6 @@ class Rotate extends Component {
         (currentAngle + (newAngle5 - (startAngle ? startAngle : 0))) +
         'deg)'
 
-    this.box6.style.transform =
-        'rotate(' +
-        (currentAngle + (newAngle6 - (startAngle ? startAngle : 0))) +
-        'deg)'
-
-    this.box7.style.transform =
-        'rotate(' +
-        (currentAngle + (newAngle7 - (startAngle ? startAngle : 0))) +
-        'deg)'
-
     this.box8.style.transform =
         'rotate(' +
         (currentAngle + (newAngle8 - (startAngle ? startAngle : 0))) +
@@ -427,16 +481,6 @@ class Rotate extends Component {
     this.box12.style.transform =
         'rotate(' +
         (currentAngle + (newAngle12 - (startAngle ? startAngle : 0))) +
-        'deg)'
-
-    this.box13.style.transform =
-        'rotate(' +
-        (currentAngle + (newAngle13 - (startAngle ? startAngle : 0))) +
-        'deg)'
-
-    this.box14.style.transform =
-        'rotate(' +
-        (currentAngle + (newAngle14 - (startAngle ? startAngle : 0))) +
         'deg)'
 
     this.box15.style.transform =
@@ -473,28 +517,73 @@ class Rotate extends Component {
         'rotate(' +
         (currentAngle + (newAngle21 - (startAngle ? startAngle : 0))) +
         'deg)'
+    
+    this.box22.style.transform =
+        'rotate(' +
+        (currentAngle + (newAngle22 - (startAngle ? startAngle : 0))) +
+        'deg)'
+
+    this.box23.style.transform =
+        'rotate(' +
+        (currentAngle + (newAngle23 - (startAngle ? startAngle : 0))) +
+        'deg)'
+
+    this.box24.style.transform =
+        'rotate(' +
+        (currentAngle + (newAngle24 - (startAngle ? startAngle : 0))) +
+        'deg)'
+
+    this.box25.style.transform =
+        'rotate(' +
+        (currentAngle + (newAngle25 - (startAngle ? startAngle : 0))) +
+        'deg)'
+
+    this.box26.style.transform =
+        'rotate(' +
+        (currentAngle + (newAngle26 - (startAngle ? startAngle : 0))) +
+        'deg)'
+
+    this.box27.style.transform =
+        'rotate(' +
+        (currentAngle + (newAngle27 - (startAngle ? startAngle : 0))) +
+        'deg)'
+
+    this.box28.style.transform =
+        'rotate(' +
+        (currentAngle + (newAngle28 - (startAngle ? startAngle : 0))) +
+        'deg)'
+
+    this.box29.style.transform =
+        'rotate(' +
+        (currentAngle + (newAngle29 - (startAngle ? startAngle : 0))) +
+        'deg)'
+
 
     this.setState({ angle: newAngle, 
       angletwo: newAngleTwo, 
       angle3: newAngle3, 
       angle4: newAngle4,
-      angle5: newAngle5, 
-      angle6: newAngle6,
-      angle7: newAngle7, 
+      angle5: newAngle8, 
       angle8: newAngle8,
       angle9: newAngle9, 
       angle10: newAngle10,
       angle11: newAngle11, 
-      angle12: newAngle12,
-      angle13: newAngle13, 
-      angle14: newAngle14,
-      angle15: newAngle15, 
+      angle12: newAngle15,
+      angle15: newAngle16, 
       angle16: newAngle16,
       angle17: newAngle17, 
       angle18: newAngle18,
-      angle19: newAngle19, 
+      angle19: newAngle19,
       angle20: newAngle20,
-      angle21: newAngle21
+      angle21: newAngle21,
+      angle22: newAngle22,
+      angle23: newAngle23,
+      angle24: newAngle24,
+      angle25: newAngle25,
+      angle26: newAngle26,
+      angle27: newAngle27,
+      angle28: newAngle28,
+      angle29: newAngle29 
     })
 
   }
@@ -535,20 +624,6 @@ class Rotate extends Component {
       boxCenterPoint5: { x: boxCenterX5, y: boxCenterY5 }
     })
 
-    const boxPosition6 = this.box6.getBoundingClientRect()
-    const boxCenterX6 = boxPosition6.left + boxPosition6.width / 2
-    const boxCenterY6 = boxPosition6.top + boxPosition6.height / 2
-    this.setState({
-      boxCenterPoint6: { x: boxCenterX6, y: boxCenterY6 }
-    })
-
-    const boxPosition7 = this.box7.getBoundingClientRect()
-    const boxCenterX7 = boxPosition7.left + boxPosition7.width / 2
-    const boxCenterY7 = boxPosition7.top + boxPosition7.height / 2
-    this.setState({
-      boxCenterPoint7: { x: boxCenterX7, y: boxCenterY7 }
-    })
-
     const boxPosition8 = this.box8.getBoundingClientRect()
     const boxCenterX8 = boxPosition8.left + boxPosition8.width / 2
     const boxCenterY8 = boxPosition8.top + boxPosition8.height / 2
@@ -584,20 +659,6 @@ class Rotate extends Component {
       boxCenterPoint12: { x: boxCenterX12, y: boxCenterY12 }
     })
 
-    const boxPosition13 = this.box13.getBoundingClientRect()
-    const boxCenterX13 = boxPosition13.left + boxPosition13.width / 2
-    const boxCenterY13 = boxPosition13.top + boxPosition13.height / 2
-    this.setState({
-      boxCenterPoint13: { x: boxCenterX13, y: boxCenterY13 }
-    })
-
-    const boxPosition14 = this.box14.getBoundingClientRect()
-    const boxCenterX14 = boxPosition14.left + boxPosition14.width / 2
-    const boxCenterY14 = boxPosition14.top + boxPosition14.height / 2
-    this.setState({
-      boxCenterPoint14: { x: boxCenterX14, y: boxCenterY14 }
-    })
-
     const boxPosition15 = this.box15.getBoundingClientRect()
     const boxCenterX15 = boxPosition15.left + boxPosition15.width / 2
     const boxCenterY15 = boxPosition15.top + boxPosition15.height / 2
@@ -610,6 +671,13 @@ class Rotate extends Component {
     const boxCenterY16 = boxPosition16.top + boxPosition16.height / 2
     this.setState({
       boxCenterPoint16: { x: boxCenterX16, y: boxCenterY16 }
+    })
+
+    const boxPosition17 = this.box17.getBoundingClientRect()
+    const boxCenterX17 = boxPosition17.left + boxPosition17.width / 2
+    const boxCenterY17 = boxPosition17.top + boxPosition17.height / 2
+    this.setState({
+      boxCenterPoint17: { x: boxCenterX17, y: boxCenterY17 }
     })
 
     const boxPosition18 = this.box18.getBoundingClientRect()
@@ -640,6 +708,62 @@ class Rotate extends Component {
       boxCenterPoint21: { x: boxCenterX21, y: boxCenterY21 }
     })
 
+    const boxPosition22 = this.box22.getBoundingClientRect()
+    const boxCenterX22 = boxPosition22.left + boxPosition22.width / 2
+    const boxCenterY22 = boxPosition22.top + boxPosition22.height / 2
+    this.setState({
+      boxCenterPoint22: { x: boxCenterX22, y: boxCenterY22 }
+    })
+
+    const boxPosition23 = this.box23.getBoundingClientRect()
+    const boxCenterX23 = boxPosition23.left + boxPosition23.width / 2
+    const boxCenterY23 = boxPosition23.top + boxPosition23.height / 2
+    this.setState({
+      boxCenterPoint23: { x: boxCenterX23, y: boxCenterY23 }
+    })
+
+    const boxPosition24 = this.box24.getBoundingClientRect()
+    const boxCenterX24 = boxPosition24.left + boxPosition24.width / 2
+    const boxCenterY24 = boxPosition24.top + boxPosition24.height / 2
+    this.setState({
+      boxCenterPoint24: { x: boxCenterX24, y: boxCenterY24 }
+    })
+
+    const boxPosition25 = this.box25.getBoundingClientRect()
+    const boxCenterX25 = boxPosition25.left + boxPosition25.width / 2
+    const boxCenterY25 = boxPosition25.top + boxPosition25.height / 2
+    this.setState({
+      boxCenterPoint25: { x: boxCenterX25, y: boxCenterY25 }
+    })
+
+    const boxPosition26 = this.box26.getBoundingClientRect()
+    const boxCenterX26 = boxPosition26.left + boxPosition26.width / 2
+    const boxCenterY26 = boxPosition26.top + boxPosition26.height / 2
+    this.setState({
+      boxCenterPoint26: { x: boxCenterX26, y: boxCenterY26 }
+    })
+
+    const boxPosition27 = this.box27.getBoundingClientRect()
+    const boxCenterX27 = boxPosition27.left + boxPosition27.width / 2
+    const boxCenterY27 = boxPosition27.top + boxPosition27.height / 2
+    this.setState({
+      boxCenterPoint27: { x: boxCenterX27, y: boxCenterY27 }
+    })
+
+    const boxPosition28 = this.box28.getBoundingClientRect()
+    const boxCenterX28 = boxPosition28.left + boxPosition28.width / 2
+    const boxCenterY28 = boxPosition28.top + boxPosition28.height / 2
+    this.setState({
+      boxCenterPoint28: { x: boxCenterX28, y: boxCenterY28 }
+    })
+
+    const boxPosition29 = this.box29.getBoundingClientRect()
+    const boxCenterX29 = boxPosition29.left + boxPosition29.width / 2
+    const boxCenterY29 = boxPosition29.top + boxPosition29.height / 2
+    this.setState({
+      boxCenterPoint29: { x: boxCenterX29, y: boxCenterY29 }
+    })
+
     window.onmouseup = this.mouseUpHandler
 
     window.onmousemove = this.mouseMoveHandler
@@ -647,124 +771,146 @@ class Rotate extends Component {
 
   render() {
     return (
-      <main>
-        <section>
-          <div className='prev'><Link className='button is-rounded' to='/d3'> Previous</Link></div>
-          <div className='rotate'>
-            <div>
-              <img
-                className='box'
-                ref={img => (this.box = img)}
-                src={G}
-              />
-              <img
-                className='box'
-                ref={img => (this.boxtwo = img)}
-                src={A}
-              />
-              <img
-                className='box'
-                ref={img => (this.box3 = img)}
-                src={B}
-              />
-              <img
-                className='box'
-                ref={img => (this.box4 = img)}
-                src={R}
-              />
-              <img
-                className='box'
-                ref={img => (this.box5 = img)}
-                src={I}
-              />
-              <img
-                className='box'
-                ref={img => (this.box6 = img)}
-                src={E}
-              />
-              <img
-                className='box'
-                ref={img => (this.box7 = img)}
-                src={L}
-              />
-            </div>
-            <div>
-              <img
-                className='box'
-                ref={img => (this.box8 = img)}
-                src={G}
-              />
-              <img
-                className='box'
-                ref={img => (this.box9 = img)}
-                src={A}
-              />
-              <img
-                className='box'
-                ref={img => (this.box10 = img)}
-                src={B}
-              />
-              <img
-                className='box'
-                ref={img => (this.box11 = img)}
-                src={R}
-              />
-              <img
-                className='box'
-                ref={img => (this.box12 = img)}
-                src={I}
-              />
-              <img
-                className='box'
-                ref={img => (this.box13 = img)}
-                src={E}
-              />
-              <img
-                className='box'
-                ref={img => (this.box14 = img)}
-                src={L}
-              />
-            </div>
-            <div>
-              <img
-                className='box'
-                ref={img => (this.box15 = img)}
-                src={G}
-              />
-              <img
-                className='box'
-                ref={img => (this.box16 = img)}
-                src={A}
-              />
-              <img
-                className='box'
-                ref={img => (this.box17 = img)}
-                src={B}
-              />
-              <img
-                className='box'
-                ref={img => (this.box18 = img)}
-                src={R}
-              />
-              <img
-                className='box'
-                ref={img => (this.box19 = img)}
-                src={I}
-              />
-              <img
-                className='box'
-                ref={img => (this.box20 = img)}
-                src={E}
-              />
-              <img
-                className='box'
-                ref={img => (this.box21 = img)}
-                src={L}
-              />
-            </div>
+      <section>
+        {/* <div className='prev'><Link className='button is-rounded' to='/d3'> Previous</Link><Link className='button is-rounded' to='/art'> Next</Link></div> */}
+        <div className='rotate'>
+          <div>
+            <img
+              className='bx'
+              ref={img => (this.box = img)}
+              src={G}
+            />
+            <img
+              className='bx'
+              ref={img => (this.boxtwo = img)}
+              src={A}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box3 = img)}
+              src={B}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box4 = img)}
+              src={R}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box5 = img)}
+              src={I}
+            />
           </div>
-        </section>
-      </main>
+          <div>
+            <img
+              className='bx'
+              ref={img => (this.box8 = img)}
+              src={G}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box9 = img)}
+              src={A}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box10 = img)}
+              src={B}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box11 = img)}
+              src={R}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box12 = img)}
+              src={I}
+            />
+          </div>
+          <div>
+            <img
+              className='bx'
+              ref={img => (this.box15 = img)}
+              src={G}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box16 = img)}
+              src={A}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box17 = img)}
+              src={B}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box18 = img)}
+              src={R}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box19 = img)}
+              src={I}
+            />
+          </div>
+          <div>
+            <img
+              className='bx'
+              ref={img => (this.box20 = img)}
+              src={G}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box21 = img)}
+              src={A}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box22 = img)}
+              src={B}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box23 = img)}
+              src={R}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box24 = img)}
+              src={I}
+            />
+          </div>
+          <div>
+            <img
+              className='bx'
+              ref={img => (this.box25 = img)}
+              src={G}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box26 = img)}
+              src={A}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box27 = img)}
+              src={B}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box28 = img)}
+              src={R}
+            />
+            <img
+              className='bx'
+              ref={img => (this.box29 = img)}
+              src={I}
+            />
+          </div>
+        </div>
+      </section>
     )
   }
 }

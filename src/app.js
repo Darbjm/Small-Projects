@@ -5,9 +5,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Yandex from './yandex/Yandex'
 import ReactDOM from 'react-dom'
 import Rotate from './rotate/Rotate'
-
-
-
+import Art from './art/Art'
 
 class App extends Component {
   state = {
@@ -41,16 +39,17 @@ class App extends Component {
       return 'No data yet'
     }
     if (width % 2 === 0) {
-      return <div><Route path="/rotate" component={Rotate} /></div>
+      return <div><Route path='/rotate' component={Rotate} /></div>
     }
-    return <Route path="/rotate" component={Rotate} />
+    return <Route path='/rotate' component={Rotate} />
   }
   render() {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Yandex} />
-          <Route path="/d3" component={D3} />
+          <Route exact path='/' component={Yandex} />
+          <Route path='/d3' component={D3} />
+          <Route path='/art' component={Art} />
           {this.renderChart()}
         </Switch>
       </BrowserRouter>
